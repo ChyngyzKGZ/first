@@ -1,0 +1,645 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   background-color: #e1dfdf;
+   font-family: "Quicksand", sans-serif;
+}
+
+.container {
+   max-width: 80%;
+   margin: 0 auto;
+}
+
+ul {
+   list-style: none;
+}
+
+section {
+   padding: 200px 0;
+   height: 1000px;
+   background-size: cover;
+   /* background-position: center; */
+}
+
+a {
+   text-decoration: none;
+}
+
+header {
+   position: fixed;
+   width: 100%;
+   padding: 0 0;
+   background-color: rgba(7, 21, 97, 0.611);
+   z-index: 10;
+}
+
+.img__skills {
+   height: 170px;
+   width: 100%;
+   background-size: cover;
+   background-position: center;
+}
+
+img {
+   width: 100%;
+}
+
+.col-3 {
+   width: 25%;
+   padding: 0 15px;
+}
+
+.header__nav {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.modal-content {
+   border-radius: 10px;
+}
+
+.nav {
+   column-gap: 30px;
+   display: flex;
+   font-size: 20px;
+}
+
+.nav li a {
+   color: rgb(230, 230, 230);
+   font-weight: bold;
+   transition: all 0.4s ease 0s;
+   text-decoration: none;
+}
+
+.nav li a:hover {
+   text-decoration: underline;
+   color: rgb(255, 0, 0);
+}
+
+.header__nav img {
+   width: 80px;
+   background-size: cover;
+   background-position: center;
+}
+
+main {
+   height: 100vh;
+   background-image: url(https://img3.akspic.ru/crops/0/5/4/9/2/129450/129450-fara-lichnyj_roskoshnyj_avtomobil-reshetka-svet-bmv_m5-3840x2160.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+main .container {
+   height: 100%;
+   display: flex;
+   align-items: center;
+}
+
+.main__wrap {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   row-gap: 20px;
+   color: #fff;
+   margin-right: auto;
+   width: 50%;
+}
+
+.main__wrap button {
+   cursor: pointer;
+   padding: 10px 20px;
+   border-radius: 20px;
+   border: none;
+   font-size: 20px;
+   background-color: rgb(244, 33, 33);
+   transition: all 0.3s ease 0s;
+}
+
+.container2 {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.row {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 -15px;
+}
+
+.main__wrap button:hover {
+   background-color: rgb(0, 255, 234);
+   color: #fff;
+}
+
+.morph {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   color: white
+}
+
+.skill__description {
+   font-weight: 700;
+   color: white
+}
+
+.hidden {
+   display: none;
+}
+
+.modal {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: fixed;
+   z-index: 1;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+   background-color: #fefefe;
+   padding: 20px;
+   border: 1px solid #888;
+   max-width: 500px;
+   text-align: center;
+   width: 100%;
+   align-items: center;
+   position: relative;
+}
+
+.close {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   font-size: 20px;
+   cursor: pointer;
+}
+
+.btn__apply {
+   background-color: rgb(127, 149, 18);
+   color: white;
+   margin: 10px 0 0 0;
+   padding: 5px 15px;
+   transition: all 0.3s ease 0s;
+   border: none;
+}
+
+.btn__apply:hover {
+   background-color: rgb(197, 230, 32);
+   color: black;
+}
+
+/* ! Skills */
+
+#skills {
+   /* background-image: linear-gradient(to bottom, #1d26d2, #9c71ea); */
+   /* background-image: url(https://gagaru.club/uploads/posts/2023-02/1676241521_gagaru-club-p-bmv-krasivie-oboi-instagram-46.jpg); */
+   background-image: url(https://i.pinimg.com/originals/59/4f/99/594f996dc101f387cbbdb83255637d2a.gif);
+}
+
+.box__skills {
+   height: 450px;
+   overflow: hidden;
+   border: 3px solid rgb(22, 33, 182);
+   border-radius: 10px;
+}
+
+.waveform,
+.description__about-skill {
+   padding: 0 15px 15px;
+}
+
+.waveform {
+   margin: 14px 0 0 0;
+   font-size: 21px;
+   text-align: center;
+   font-weight: 600;
+   color: rgb(201, 201, 201);
+}
+
+.description__about-skill {
+   text-align: center;
+   color: rgb(200, 199, 199);
+}
+
+.btn-more-information {
+   padding: 14px;
+   border-radius: 20px;
+   cursor: pointer;
+   background-color: #24d48a;
+   transition: all 0.3s ease 0s;
+   margin: 25px auto;
+   border: none;
+}
+
+.btn-more-information:hover {
+   background-color: #86d2b3;
+   color: rgb(239, 239, 239);
+}
+
+/* /////////////////////////////////////////////////////////////////////// */
+
+#main2 {
+   padding: 50px 0;
+   height: 100vh;
+   background-image: url('https://99px.ru/sstorage/53/2018/03/tmb_223247_357918.jpg');
+}
+
+#main2 .swiper {
+   height: 600px;
+}
+
+#main2 .swiper-slide {
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   border-radius: 5%;
+}
+
+#main2 .swiper-slide:nth-child(1) {
+   background-image: url('https://images.unsplash.com/photo-1614026480209-cd9934144671?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTZ8fHxlbnwwfHx8fHw%3D');
+   color: white;
+   font-size: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#main2 .swiper-slide:nth-child(2) {
+   background-image: url('https://img1.akspic.ru/crops/6/2/1/8/5/158126/158126-bmw_4_j_serii-bajerishe_motoren_verke_ag-bmv_m4-legkovyye_avtomobili-bmw-3840x2160.jpg');
+}
+
+#main2 .swiper-slide:nth-child(3) {
+   background-image: url('https://pixelz.cc/wp-content/uploads/2018/08/bmw-7-series-uhd-4k-wallpaper.jpg');
+}
+
+#main2 .swiper-slide:nth-child(4) {
+   background-image: url('https://www.bmw.ru/content/dam/bmw/marketRU/bmw_ru/topics/offers-and-services/original-bmw-accessories/summer17wheels/THE3-desk.jpg');
+}
+
+#main2 .swiper-slide:nth-child(5) {
+   background-image: url('https://wallpapercosmos.com/w/full/8/0/0/3093-3840x2160-desktop-4k-bmw-wallpaper-image.jpg');
+}
+
+#main2 .swiper-slide:nth-child(6) {
+   background-image: url('https://4kwallpapers.com/images/wallpapers/bmw-m4-5k-8k-3840x2160-2235.jpg');
+}
+
+#main2 .swiper-slide:nth-child(7) {
+   background-image: url('https://wallpaperaccess.com/full/338364.jpg');
+}
+
+#main2 .swiper-slide:nth-child(8) {
+   background-image: url('https://www.hdwallpapers.in/download/bmw_m4_on_ferrada_wheels_4k_8k-3840x2160.jpg');
+}
+
+#main2 .swiper-slide:nth-child(9) {
+   background-image: url('https://wallpapercave.com/wp/wp3616622.jpg');
+}
+
+#main2 .swiper-slide:nth-child(10) {
+   background-image: url('https://wallpapersmug.com/download/3840x2160/6bad42/adro-bmw-m4-coupee-dark-car.jpg');
+}
+
+#main2 .swiper-slide:nth-child(11) {
+   background-image: url('https://www.hdcarwallpapers.com/walls/bmw_m3_competition_xdrive_2021_4k_8k-HD.jpg');
+}
+
+
+#main2 .autoplay-progress {
+   position: absolute;
+   right: 16px;
+   bottom: 16px;
+   z-index: 10;
+   width: 48px;
+   height: 48px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: bold;
+   color: var(--swiper-theme-color);
+}
+
+#main2  .autoplay-progress svg {
+   --progress: 0;
+   position: absolute;
+   left: 0;
+   top: 0px;
+   z-index: 10;
+   width: 100%;
+   height: 100%;
+   stroke-width: 4px;
+   stroke: var(--swiper-theme-color);
+   fill: none;
+   stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+   stroke-dasharray: 125.6;
+   transform: rotate(-90deg);
+}
+
+#main2 .swiper-pagination-bullet-active {
+   background-color: #fa2d2d;
+}
+
+
+#main2 .swiper-button-next,
+#main2 .swiper-button-prev {
+   /* background-color: #fff;
+   border-radius: 50%;
+   width: 50px;
+   height: 50px; */
+} 
+
+#main2 .swiper-button-next:after,
+#main2 .swiper-button-prev:after {
+   content: none;
+}
+
+#main2 .swiper-button-next,
+#main2 .swiper-button-prev {
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 60px;
+   height: 60px;
+}
+
+
+#main2 .swiper-button-next,
+#main2 .swiper-button-prev {
+   background-image: url('https://cdn.worldvectorlogo.com/logos/bmw-8.svg');
+}
+
+#main2 .swiper-button-next {
+   right: 30px;
+}
+#main2 .swiper-button-prev {
+   left: 30px;
+}
+
+/* Свайпер 3 блока */
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+  background-image: url('https://foni.club/uploads/posts/2023-01/thumbs/1672775524_foni-club-p-oboi-chernie-4k-3.jpg');
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+swiper-slide:nth-child(1) {
+   background-image: url('https://img2.akspic.ru/previews/9/2/8/3/7/173829/173829-luchshij_bmv_m4-bmw-sportkar-legkovyye_avtomobili-bajerishe_motoren_verke_ag-500x.jpg');
+}
+
+swiper-slide:nth-child(2) {
+   background-image: url('https://i.pinimg.com/originals/ce/3d/36/ce3d36cf6db591feed9733596a0fc908.jpg');
+}
+
+swiper-slide:nth-child(3) {
+   background-image: url('https://oboi-telefon.ru/wallpapers/57757/31556.jpg');
+}
+
+swiper-slide:nth-child(4) {
+   background-image: url('https://oboi-telefon.ru/wallpapers/57749/35449.jpg');
+}
+
+swiper-slide:nth-child(5) {
+   background-image: url('https://oboi-telefon.ru/wallpapers/57751/35838.jpg');
+}
+
+swiper-slide:nth-child(6) {
+   background-image: url('https://oboi-telefon.ru/wallpapers/29121/32904.jpg');
+}
+
+swiper-slide:nth-child(7) {
+   background-image: url('https://oboi-telefon.ru/wallpapers/29120/34808.jpg');
+}
+
+swiper-slide:nth-child(8) {
+   background-image: url('https://oboi-telefon.ru/wallpapers/29117/37487.jpg');
+}
+
+swiper-slide:nth-child(9) {
+   background-image: url('https://i.pinimg.com/originals/e9/56/14/e9561459bc89eca53a5c881268d32eef.jpg');
+}
+
+swiper-slide:nth-child(10) {
+   background-image: url('https://oboi-telefon.ru/wallpapers/29128/39147.jpg');
+}
+
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ////////////////////////////////////////////////////// */
+
+/* Категория */
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+.container{
+   max-width: 80%;
+   margin: 0 auto;
+}
+
+.output {
+   margin-top: 50px;
+   margin-bottom: 50px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 30px;
+}
+
+.output img {
+   width: 150px;
+   height: 100px;
+}
+
+.show {
+   cursor: pointer;
+   background-color: chartreuse;
+   margin-top: 5px;
+}
+
+.active {
+   background-color: red;
+}
+
+/* ////////////////////////////////////////////////////////////// */
+/* Аккордеон */
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+.accordionSection {
+   background-image: url('https://rare-gallery.com/uploads/posts/522045-bmw-i8-4k-wallpapers.jpg');
+   padding: 100px 0;
+   background-color: #096969;
+   color: white;
+}
+.container {
+   max-width: 80%;
+   margin: 0 auto;
+}
+
+body {
+   height: 150vh;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+.container {
+   max-width: 80%;
+   margin: 0 auto;
+}
+
+ul {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+}
+
+section {
+   padding: 200px 0;
+   height: 1000px;
+}
+
+
+header {
+   position: fixed;
+   width: 100%;
+}
+
+.header__nav {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.nav {
+   display: flex;
+   column-gap: 30px;
+   font-size: 20px;
+}
+
+.header__nav img {
+   width: 100px;
+}
+
+.nav li a {
+   color: white;
+   font-weight: bold;
+}
+
+.accordion__content p {
+   overflow: hidden;
+}
+
+
+/* ////////////////////////// */
+
+/* #accordionSection { */
+   /* padding: 100px 0;
+   background-color: #096969;
+   color: white;
+} */
+
+.plus {
+   width: 30px;
+   height: 30px;
+   transition: .3s;
+}
+
+.accordion__name {
+   background-color: rgba(11, 45, 133, 0.7);
+   padding: 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   cursor: pointer;
+}
+
+.accordion__name p {
+   font-size: 20px;
+}
+
+.accordion__content {
+   overflow: hidden;
+   padding: 10px 20px;
+   max-height: 0;
+   transition: .5s ease-out;
+}
+
+/* .accordion__content p {
+   padding: 10px;
+} */
+
+/* //////////////////////////// */
+
+.accordion__wrap.accordion__active .accordion__content {
+   max-height: 400px;
+   transition: 1s;
+}
+
+.accordion__wrap.accordion__active .plus {
+   transform: rotate(45deg);
+   transition: .5s ease-out;
+}

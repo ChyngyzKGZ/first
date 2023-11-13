@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ChyngyzGithub</title>
+
+   <link
+   rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+ />
+ 
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <link rel="stylesheet" href="./css/burger.css">
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./css/media.css">
+
+</head>
+
+<body>
+
+   <header>
+      <div class="container">
+         <div class="header__nav">
+            <img src="https://mobilewallpapers.narod.ru/cars/images/bmd_logo.gif"
+               alt="logo__instagram">
+            <ul class="nav">
+               <li><a href="#main">Главная</a></li>
+               <li><a href="#skills">Варианты</a></li>
+               <li><a href="#main2">Каталог</a></li>
+               <li><a href="#">Контакты</a></li>
+               <li><a href="#">Контакты</a></li>
+            </ul>
+            <div class="mobile-btn">
+               <span></span>
+            </div>
+         </div>
+      </div>
+      <div class="backdrop"></div>
+
+   </header>
+   <main id="main">
+      <div class="container">
+         <div class="main__wrap">
+            <h1 class="morph">БМВ</h1>
+            <p class="skill__description">Автомобили BMW надежны, престижны и пользуются популярностью во всем мире. Фирма Bayerische Motoren Werke, сокращенно BMW, была образована в 1916 году в столице Баварии — городе Мюнхене. На русский язык это наименование переводится как «Баварские моторные заводы».</p>
+            <button id="showForm">Заказать БМВ</button>
+         </div>
+      </div>
+   </main>
+
+   <section id="skills">
+      <div class="container">
+         <div class="row skill__row">
+            <div class="col-3">
+               <div class="box__skills">
+                  <img class="img__skills"
+                     src="https://s1.1zoom.me/big3/482/BMW_Motorcycle_Roads_S_1000_RR_(K_67)_2022_Motion_614206_3840x2560.jpg"
+                     alt="">
+                  <div class="waveform">Мотоциклы</div>
+                  <div class="description__about-skill">Мотоциклы БМВ – это свобода, скорость и стиль в каждой детали.</div>
+               </div>
+            </div>
+            <div class="col-3">
+               <div class="box__skills">
+                  <img class="img__skills"
+                     src="https://img2.akspic.ru/crops/5/0/9/0/20905/20905-sportivnyj_avtomobil-bmv_m5-bmw_x3-obod-bmv_m4-3840x2160.jpg"
+                     alt="">
+                  <div class="waveform">Седаны</div>
+                  <div class="description__about-skill">Седаны БМВ впечатляющим образом сочетают в себе фирменную спортивность БМВ "М" с комфортом и элегантностью седана бизнес-класса.</div>
+               </div>
+            </div>
+            <div class="col-3">
+               <div class="box__skills">
+                  <img class="img__skills"
+                     src="https://images.drive.com.au/caradvice/image/private/c_fill,f_auto,g_auto,h_1080,q_auto:eco,w_1920/v1/ki2fyakxoytsx2xme4cz"
+                     alt="">
+                  <div class="waveform">Кроссоверы</div>
+                  <div class="description__about-skill">Кроссоверы БМВ - это компактный спортивно-унитарные автомобили люкс класса. В нем сочетаются мощь эстетики, бескомпромиссность динамики, неограниченность возможностей и универсальность.</div>
+               </div>
+            </div>
+            <div class="col-3">
+               <div class="box__skills">
+                  <img class="img__skills"
+                     src="https://i.pinimg.com/originals/47/b5/6c/47b56ce279fae5ee07dd265ac9c5daba.jpg"
+                     alt="">
+                  <div class="waveform">Электрокары</div>
+                  <div class="description__about-skill">Электрокары БМВ - это удовольствие от экологически чистого вождения без вредных выбросов за рулем полностью электрических моделей БМВ.</div>
+               </div>
+            </div>
+            <a target="_blank" href="https://www.bmw-berlin.de" class="btn-more-information">Заказ БМВ прямо из Германии</a>
+         </div>
+      </div>
+   </section>
+
+   <section id="main2">
+      <div class="container">
+
+          <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+                  <div class="swiper-slide"></div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="autoplay-progress">
+                  <svg viewBox="0 0 48 48">
+                    <circle cx="24" cy="24" r="20"></circle>
+                  </svg>
+                  <span></span>
+              </div>
+              <div class="swiper-pagination"></div>
+          </div>
+
+      </div>
+  </section>
+
+   <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="30"
+  slides-per-view="3">
+   <swiper-slide></swiper-slide>
+   <swiper-slide></swiper-slide>
+   <swiper-slide></swiper-slide>
+   <swiper-slide></swiper-slide>
+   <swiper-slide></swiper-slide>
+   <swiper-slide></swiper-slide>
+   <swiper-slide></swiper-slide>
+   <swiper-slide></swiper-slide>
+   <swiper-slide></swiper-slide>
+   <swiper-slide></swiper-slide>
+   </swiper-container>
+
+   <section>
+      <div class="container">
+
+          <h2>Виды БМВ</h2>
+          <!-- <select class="categories__choise"></select> -->
+          <div class="wrap__btn"></div>
+
+          <form>
+              <input type="text" class="search">
+              <button type="submit">Искать</button>
+              <button type="button" class="sort" name="asc">ascendant</button>
+              <button type="button" class="clear">X</button>
+          </form>
+
+          <div class="output"></div>
+
+      </div>
+  </section>
+
+  <section id="accordionSection">
+   <div class="container">
+       <div class="accordion">
+
+           <div class="accordion__wrap">
+               <div class="accordion__name">
+                   <p>БМВ</p>
+                   <img class="plus" src="https://cdn.worldvectorlogo.com/logos/bmw-8.svg" alt="" />
+               </div>
+               <div class="accordion__content">
+                   <p>
+                     БМВ – это болезнь от которой лечиться не хочется. У БМВ есть душа, которая говорит медленно ехать нельзя.
+                   </p>
+               </div>
+           </div>
+
+           <div class="accordion__wrap">
+               <div class="accordion__name">
+                   <p>БМВ</p>
+                   <img class="plus" src="https://cdn.worldvectorlogo.com/logos/bmw-8.svg" alt="" />
+               </div>
+               <div class="accordion__content">
+                   <p>
+                     Пока мыл БМВ - 3 раза падал в обморок, от ее красоты...
+                   </p>
+               </div>
+           </div>
+
+           <div class="accordion__wrap">
+               <div class="accordion__name">
+                   <p>БМВ</p>
+                   <img class="plus" src="https://cdn.worldvectorlogo.com/logos/bmw-8.svg" alt="" />
+               </div>
+               <div class="accordion__content">
+                   <p>
+                     Не все любят БМВ, но однажды проедешь на ней и ты поменяешь свое решение!
+                   </p>
+               </div>
+           </div>
+
+           <div class="accordion__wrap">
+               <div class="accordion__name">
+                   <p>БМВ</p>
+                   <img class="plus" src="https://cdn.worldvectorlogo.com/logos/bmw-8.svg" alt="" />
+               </div>
+               <div class="accordion__content">
+                   <p>В мире почти нету ничего и никого идеального.
+                     Единственная идеальная вещь в мире, создана руками человека.
+                     Это BMW.
+                   </p>
+               </div>
+           </div>
+
+       </div>
+   </div>
+</section>
+   
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+   <script src="./js/script.js"></script>
+   <script src="./js/burger.js"></script>
+</body>
+
+</html>
